@@ -1,0 +1,11 @@
+[package]
+name = "lua_jit_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mlua = { version = "0.8.8", features = ["luajit", "vendored"] }
+
+[profile.release]
+opt-level = 2
+debug = true
